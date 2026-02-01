@@ -1,11 +1,31 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>cralaps</title>
+
+    <!-- Viewport (importante per mobile/PWA) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <title>CRAL</title>
+    <meta name="description" content="Gestione soci CRAL, tessera digitale e accessi eventi" />
+
+    <!-- Manifest (obbligatorio per PWA) -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <!-- Theme color (Android/Chrome UI) -->
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Favicon / icons -->
+    <!-- (puoi anche tenere /vite.svg, ma per PWA meglio PNG) -->
+    <link rel="icon" type="image/png" href="/icons/icon-192.png" />
+
+    <!-- iOS PWA support -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="CRAL" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
